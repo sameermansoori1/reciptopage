@@ -153,114 +153,117 @@ class ReciptoScreen extends StatelessWidget {
 
   // Section Widget
   Widget _buildReciptoColumn(BuildContext context) {
-    return Container(
-      padding: EdgeInsets.all(16.h),
-      decoration: AppDecoration.fillOnPrimary.copyWith(
-        borderRadius: BorderRadiusStyle.customBorderTL16,
-      ),
-      child: Column(
-        mainAxisSize: MainAxisSize.min,
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          SizedBox(height: 4.v),
-          Padding(
-            padding: EdgeInsets.only(
-              left: 7.h,
-              right: 4.h,
-            ),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                CustomImageView(
-                  imagePath: ImageConstant.imgImage262,
-                  height: 61.v,
-                  width: 58.h,
-                  margin: EdgeInsets.only(bottom: 2.v),
-                ),
-                Padding(
-                  padding: EdgeInsets.only(left: 11.h),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        "Deals on fav Brands",
-                        style: TextStyle(
-                          color: appTheme.black900.withOpacity(0.8),
-                          fontSize: 14.fSize,
-                          fontFamily: 'Poppins',
-                          fontWeight: FontWeight.w600,
-                        ),
-                      ),
-                      SizedBox(height: 5.v),
-                      SizedBox(
-                        width: 171.h,
-                        child: Text(
-                          "Earn on your favorite brands from nearby stores",
-                          maxLines: 2,
-                          overflow: TextOverflow.ellipsis,
-                          style: TextStyle(
-                            color: appTheme.black900.withOpacity(0.4),
-                            fontSize: 12.fSize,
-                            fontFamily: 'Poppins',
-                            fontWeight: FontWeight.w500,
-                          ),
-                        ),
-                      ),
-                    ],
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: 25.0),
+      child: Container(
+        padding: EdgeInsets.all(16.h),
+        decoration: AppDecoration.fillOnPrimary.copyWith(
+          borderRadius: BorderRadiusStyle.customBorderTL16,
+        ),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            SizedBox(height: 4.v),
+            Padding(
+              padding: EdgeInsets.only(
+                left: 7.h,
+                right: 4.h,
+              ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  CustomImageView(
+                    imagePath: ImageConstant.imgImage262,
+                    height: 61.v,
+                    width: 58.h,
+                    margin: EdgeInsets.only(bottom: 2.v),
                   ),
-                ),
-                Spacer(),
-                Padding(
-                  padding: EdgeInsets.symmetric(vertical: 13.v),
-                  child: Column(
-                    children: [
-                      Container(
-                        width: 36.h,
-                        padding: EdgeInsets.symmetric(
-                          horizontal: 9.h,
-                          vertical: 1.v,
-                        ),
-                        decoration: AppDecoration.fillBlack.copyWith(
-                          borderRadius: BorderRadiusStyle.roundedBorder10,
-                        ),
-                        child: Text(
-                          "1/4",
+                  Padding(
+                    padding: EdgeInsets.only(left: 11.h),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          "Deals on fav Brands",
                           style: TextStyle(
-                            color: theme.colorScheme.onPrimary.withOpacity(1),
-                            fontSize: 11.fSize,
+                            color: appTheme.black900.withOpacity(0.8),
+                            fontSize: 14.fSize,
                             fontFamily: 'Poppins',
                             fontWeight: FontWeight.w600,
                           ),
                         ),
-                      ),
-                      SizedBox(height: 8.v),
-                      SizedBox(
-                        height: 8.v,
-                        child: AnimatedSmoothIndicator(
-                          activeIndex: 0,
-                          count: 4,
-                          effect: ScrollingDotsEffect(
-                            spacing: 4,
-                            activeDotColor: appTheme.black900.withOpacity(0.8),
-                            dotColor: appTheme.black900.withOpacity(0.4),
-                            dotHeight: 8.v,
-                            dotWidth: 8.h,
+                        SizedBox(height: 5.v),
+                        SizedBox(
+                          width: 171.h,
+                          child: Text(
+                            "Earn on your favorite brands from nearby stores",
+                            maxLines: 2,
+                            overflow: TextOverflow.ellipsis,
+                            style: TextStyle(
+                              color: appTheme.black900.withOpacity(0.4),
+                              fontSize: 12.fSize,
+                              fontFamily: 'Poppins',
+                              fontWeight: FontWeight.w500,
+                            ),
                           ),
                         ),
-                      ),
-                    ],
+                      ],
+                    ),
                   ),
-                ),
-              ],
+                  Spacer(),
+                  Padding(
+                    padding: EdgeInsets.symmetric(vertical: 13.v),
+                    child: Column(
+                      children: [
+                        Container(
+                          width: 36.h,
+                          padding: EdgeInsets.symmetric(
+                            horizontal: 9.h,
+                            vertical: 1.v,
+                          ),
+                          decoration: AppDecoration.fillBlack.copyWith(
+                            borderRadius: BorderRadiusStyle.roundedBorder10,
+                          ),
+                          child: Text(
+                            "1/4",
+                            style: TextStyle(
+                              color: theme.colorScheme.onPrimary.withOpacity(1),
+                              fontSize: 11.fSize,
+                              fontFamily: 'Poppins',
+                              fontWeight: FontWeight.w600,
+                            ),
+                          ),
+                        ),
+                        SizedBox(height: 8.v),
+                        SizedBox(
+                          height: 8.v,
+                          child: AnimatedSmoothIndicator(
+                            activeIndex: 0,
+                            count: 4,
+                            effect: ScrollingDotsEffect(
+                              spacing: 4,
+                              activeDotColor: appTheme.black900.withOpacity(0.8),
+                              dotColor: appTheme.black900.withOpacity(0.4),
+                              dotHeight: 8.v,
+                              dotWidth: 8.h,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
             ),
-          ),
-          SizedBox(height: 22.v),
-          CustomElevatedButton(
-            height: 41.v,
-            text: "Continue to app",buttonTextStyle:TextStyle(color: Colors.white) ,
-            buttonStyle: CustomButtonStyles.fillPrimary,
-          ),
-        ],
+            SizedBox(height: 22.v),
+            CustomElevatedButton(
+              height: 41.v,
+              text: "Continue to app",buttonTextStyle:TextStyle(color: Colors.white) ,
+              buttonStyle: CustomButtonStyles.fillPrimary,
+            ),
+          ],
+        ),
       ),
     );
   }
