@@ -49,7 +49,7 @@ class ReciptoScreen extends StatelessWidget {
     );
   }
 
-  /// Section Widget
+  // Section Widget
   Widget _buildFrameRow(BuildContext context) {
     return Padding(
       padding: EdgeInsets.only(
@@ -127,7 +127,7 @@ class ReciptoScreen extends StatelessWidget {
     );
   }
 
-  /// Section Widget
+  // Section Widget
   Widget _buildReceiptsCashbackList(BuildContext context) {
     return Container(
       margin: EdgeInsets.symmetric(horizontal: 20.h),
@@ -151,7 +151,7 @@ class ReciptoScreen extends StatelessWidget {
     );
   }
 
-  /// Section Widget
+  // Section Widget
   Widget _buildReciptoColumn(BuildContext context) {
     return Container(
       padding: EdgeInsets.all(16.h),

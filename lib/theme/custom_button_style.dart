@@ -2,7 +2,6 @@ import 'dart:ui';
 import 'package:sameer_s_application2/core/app_export.dart';
 import 'package:flutter/material.dart';
 
-/// A class that offers pre-defined button styles for customizing button appearance.
 class CustomButtonStyles {
   // Filled button style
   static ButtonStyle get fillPrimary => ElevatedButton.styleFrom(

@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:sameer_s_application2/core/app_export.dart';
 import 'package:sameer_s_application2/widgets/custom_elevated_button.dart';
 
-// ignore: must_be_immutable
 class ReceiptscashbacklistItemWidget extends StatelessWidget {
   const ReceiptscashbacklistItemWidget({Key? key})
       : super(
